@@ -394,8 +394,10 @@ jQuery(function($) {
         items: 5,
         navigation: false,
         pagination: false,
-        itemsDesktop: [1199, 3],
-        itemsDesktopSmall: [979, 3]
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [979, 3],
+        itemsTablet: [768, 3],
+        itemsMobile: [480, 2]
     });
     $("#about_slider").owlCarousel({
         autoPlay: true, //Set AutoPlay to 3 seconds

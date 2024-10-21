@@ -13500,7 +13500,7 @@
               <!-- First Row -->
               <div class="row package-row">
                 <!-- First Column -->
-                <div class="col-md-6 col-sm-2 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12 pb-5 pb-md-0">
                   <div
                     class="bb-packages-list__item active"
                     role="group"
@@ -13858,7 +13858,7 @@
                 </div>
                 <!-- Repeat the structure for the second and third columns, ensuring they use the same "collapseRow2" class for shared accordions -->
                 <!-- Second Column -->
-                <div class="col-md-6 col-sm-2 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                   <div
                     class="bb-packages-list__item active"
                     role="group"
@@ -14471,7 +14471,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="team-member top40 text-center">
               <div class="team-img">
                 <img src="images/avatar-dummy.webp" alt>
@@ -14493,7 +14493,7 @@
               <span>Founder & CEO</span>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="team-member top40 text-center">
               <div class="team-img">
                 <img src="images/avatar-dummy.webp" alt>
@@ -14515,7 +14515,7 @@
               <span>Civil Engineer</span>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-6">
             <div class="team-member top40 text-center">
               <div class="team-img">
                 <img src="images/avatar-dummy.webp" alt>
@@ -14967,7 +14967,7 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 20,
         // centeredSlides: true,
         pagination: {
@@ -14978,6 +14978,20 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
       });
     </script>
   </body>
