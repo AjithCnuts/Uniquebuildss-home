@@ -137,13 +137,26 @@
       <section id="banner-nin" class="parallaxie">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-8 col-sm-8 col-xs-12">
               <div class="banner_detail">
-                <h2>Well Come in <span>UniqueBuildss</span> Real Estate</h2>
+                <h1>WelCome in<br> <span>UniqueBuildss</span> Real Estate</h1>
                 <div id="typewriter"></div>
                 <div class="btns-box">
                   <a href="about.html" class="btn_brd">Read More</a>
-                  <a href="contact-us.html" class="btn_fill">Contact us</a>
+                  <!-- <a href="contact-us.html" class="btn_fill">Contact us</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="slider-form col-md-4  col-sm-4 col-xs-12 wow fadeIn text-center animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+              <div class="form-wrap">
+                <div class="form-appointment">
+                  <form>
+                    <input name="name" placeholder="Name" type="text" required>
+                    <input name="email" placeholder="Email" type="text">
+                    <input name="mobile" placeholder="Mobile number" type="tel" pattern="[0-9]{10}" maxlength="10" required>
+                    <input name="location" placeholder="Location" type="text" required>
+                    <button class="button-normal yellow">Submit Now</button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -738,6 +751,12 @@
                             </div>
                           </div>
                         </div>
+                        <!-- Contact Us Popup -->
+                        <div class="card accordion-item p-5">
+                          <p>Get in touch with us!</p>
+                          <a href="#." class="btn_fill short-topup" data-toggle="modal"
+                          data-target="#contactForm">Let's Build</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1145,6 +1164,12 @@
                             </div>
                           </div>
                         </div>
+                        <!-- Contact Us Popup -->
+                        <div class="card accordion-item p-5">
+                          <p>Get in touch with us!</p>
+                          <a href="#." class="btn_fill short-topup" data-toggle="modal"
+                          data-target="#contactForm">Let's Build</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1544,6 +1569,12 @@
                               </ul>
                             </div>
                           </div>
+                        </div>
+                        <!-- Contact Us Popup -->
+                        <div class="card accordion-item p-5">
+                          <p>Get in touch with us!</p>
+                          <a href="#." class="btn_fill short-topup" data-toggle="modal"
+                          data-target="#contactForm">Let's Build</a>
                         </div>
                       </div>
                     </div>
@@ -1966,6 +1997,12 @@
                               </ul>
                             </div>
                           </div>
+                        </div>
+                        <!-- Contact Us Popup -->
+                        <div class="card accordion-item p-5">
+                          <p>Get in touch with us!</p>
+                          <a href="#." class="btn_fill short-topup" data-toggle="modal"
+                          data-target="#contactForm">Let's Build</a>
                         </div>
                       </div>
                     </div>
@@ -14864,6 +14901,98 @@
                             name="email"
                             id="email"
                             type="email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="single-query">
+                          <textarea
+                            name="message"
+                            placeholder="Message"
+                            id="message"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn_fill">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #/Modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactFormLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="modal-title" id="contactFormLabel">
+              How can <span class="color_red">we help?</span>
+            </h2>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="short-msg-tab">
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                  <div class="row top20">
+                    <form class="callus padding-bottom" id="contact-form">
+                      <div class="col-md-12">
+                        <div class="single-query">
+                          <input
+                            class="keyword-input"
+                            placeholder="Name"
+                            name="name"
+                            id="name"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="single-query">
+                          <input
+                            class="keyword-input"
+                            placeholder="E - mail"
+                            name="email"
+                            id="email"
+                            type="email"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="single-query">
+                          <input
+                            class="keyword-input"
+                            placeholder="Mobile Number"
+                            name="mobile"
+                            id="mobile"
+                            type="tel" pattern="[0-9]{10}" maxlength="10"
                           />
                         </div>
                       </div>

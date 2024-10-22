@@ -2377,13 +2377,14 @@ nav.navbar.bootsnav.sticked .social-icons {
     background-repeat: no-repeat;
     background-position: center center;
 }
-#banner-nin .banner_detail h2 {
+#banner-nin .banner_detail h1 {
     color: #fff;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 300;
+    line-height: 50px;
 }
-#banner-nin .banner_detail h2 span{
+#banner-nin .banner_detail h1 span{
     font-weight: 600;
 }
 #banner-nin .banner_detail #typewriter{
@@ -3347,9 +3348,9 @@ nav.navbar.bootsnav.sticked .social-icons {
     font-size: 14px;
     padding-bottom: 20px
 }
-#services-nin a.btn_fill {
+/* #services-nin a.btn_fill {
     margin-top: 35px;
-}
+} */
 #services-nin .nav-tabs {
     border: none;
     float: right;

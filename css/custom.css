@@ -531,3 +531,9 @@
     padding: 25% 0 15%;
   }
 }
+@media (min-width: 768px) {
+  .modal-dialog {
+      width: 370px !important;
+      margin: 30px auto;
+  }
+}
