@@ -530,10 +530,21 @@
   #banner-nin{
     padding: 25% 0 15%;
   }
+  #banner-nin .banner_detail h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
 }
 @media (min-width: 768px) {
   .modal-dialog {
       width: 370px !important;
       margin: 30px auto;
   }
+}
+.heading_space{
+  font-size: 15px;
+  line-height: 25px;
 }
