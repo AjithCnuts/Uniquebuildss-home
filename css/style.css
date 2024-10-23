@@ -2374,8 +2374,8 @@ nav.navbar.bootsnav.sticked .social-icons {
 
 /*** Slider - 9 ***/
 #banner-nin{
-    padding:20% 0 15%;
-    background:url(../images/Group\ 1\ \(1\).png);
+    padding:13% 0 15%;
+    background:url(../images/Website\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -3903,7 +3903,7 @@ nav.navbar.bootsnav.sticked .social-icons {
 .park-avenue-bg .park-avenue {
     position: relative;
     z-index: 1;
-    border-bottom: : 3px solid #1d1d1d;
+    border-bottom: 3px solid #1d1d1d;
     transition: all 0.7s ease 0s;
 }
 .park-avenue-bg .park-avenue:hover h3 {
@@ -8063,7 +8063,6 @@ a.close-overlay.hidden {
     .proerty_text > h3,
     .property_head h3 {
         font-size: 18px;
-        s
     }
     h4, #agent-2 h3 {
         font-size:16px;
