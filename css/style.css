@@ -8219,9 +8219,9 @@ a.close-overlay.hidden {
     #slider.fullscreen .flex-control-thumbs {
         margin-top: -70px;
     }
-    .slider-form {
+    /* .slider-form {
         display: none;
-    }
+    } */
     .facilities .facilities-img,
     .facilities .facilities-detail {
         width: 100%;
