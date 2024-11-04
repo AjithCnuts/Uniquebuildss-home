@@ -2374,11 +2374,17 @@ nav.navbar.bootsnav.sticked .social-icons {
 
 /*** Slider - 9 ***/
 #banner-nin{
-    padding:13% 0 15%;
+    padding:5% 0 0px;
     background:url(../images/Website\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 72vh;
+}
+@media (min-width:768px) and (max-width:1400px){
+    #banner-nin{
+        background-position: unset !important;
+    }
 }
 #banner-nin .banner_detail h1 {
     color: #fff;
