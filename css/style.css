@@ -1594,6 +1594,7 @@ figure.effect-layla .main-title {
     z-index: 10;
     border-bottom: 1px solid #dbdbdb;
     padding-bottom: 15px;
+    padding-top: 10px;
 }
 #header-bottom .col-md-10 {
     text-align: right;
