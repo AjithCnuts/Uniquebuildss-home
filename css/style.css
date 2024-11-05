@@ -2382,11 +2382,13 @@ nav.navbar.bootsnav.sticked .social-icons {
     background-position: center center;
     height: 72vh;
 }
-@media (min-width:768px) and (max-width:1400px){
+@media (min-width:770px) and (max-width:1400px){
     #banner-nin{
         background-position: unset !important;
+        height: 78vh;
     }
 }
+
 #banner-nin .banner_detail h1 {
     color: #fff;
     text-transform: uppercase;

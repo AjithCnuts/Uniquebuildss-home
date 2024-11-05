@@ -515,7 +515,7 @@
 }
 @media(max-width:768px){
   #banner-nin{
-    height: 600px;
+    height: 380px;
     display: flex;
     align-items: center;
   }
@@ -524,9 +524,9 @@
     text-transform: uppercase;
     font-size: 28px !important;
   }
-  #banner-nin{
+  /* #banner-nin{
     padding: 30% 0 15% !important;
-  }
+  } */
 }
 @media(max-width:992px){
   #banner-nin{
@@ -540,6 +540,17 @@
     line-height: 50px;
 }
 }
+
+@media (max-width:769px){
+  #banner-nin{
+      padding:0 0 0px !important;
+      background:url(../images/Website\ mobile\ feed.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 67px;
+  }
+}
+
 @media (min-width: 768px) {
   .modal-dialog {
       width: 370px !important;
@@ -1005,4 +1016,8 @@ iframe#youtubevideo {
   .steps__step-number {
     margin-inline-end: 0;
  }
+}
+#projects .cbp-item{
+  width: 350px !important;
+  /* height: 300px !important; */
 }
