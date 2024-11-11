@@ -2376,11 +2376,11 @@ nav.navbar.bootsnav.sticked .social-icons {
 /*** Slider - 9 ***/
 #banner-nin{
     padding:5% 0 0px;
-    background:url(../images/Website\ \(1\).png);
+    background:url(../images/uniquebuildss-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 72vh;
+    background-position: top left;
+    height: 75vh;
 }
 @media (min-width:770px) and (max-width:1400px){
     #banner-nin{
