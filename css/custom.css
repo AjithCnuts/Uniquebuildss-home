@@ -960,6 +960,7 @@ iframe#youtubevideo {
 }
 #ub-process #property-d-1 .owl-next, #ub-process #property-d-1 .owl-prev{
   top: 35%;
+  display: none;
 }
 @media(max-width:768px){
   #ub-process #property-d-1-2{
