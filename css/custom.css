@@ -515,7 +515,7 @@
 }
 @media(max-width:768px){
   #banner-nin{
-    /* height: 380px; */
+    height: 620px;
     display: flex;
     align-items: center;
   }
@@ -544,15 +544,32 @@
 @media (max-width:769px){
   #banner-nin{
       padding:0 0 0px !important;
-      background:url(../images/uniquebuildss-banner.png);
-  background-size:cover;
+      background:url(../images/Website\ mobile\ feed\ banner.png);
+  background-size:100%;
   background-repeat: no-repeat;
-  background-position: 0px 50px;
+  background-position: 0px 70px;
+  }
+  .up-form{
+    margin-top: -140px;
+  }
+
+}
+@media (max-width:568px){
+  #banner-nin{
+      padding:0 0 0px !important;
+      background:url(../images/Website\ mobile\ feed\ banner.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: 0px 70px;
+  }
+  #banner-nin{
+    height: 420px;
+    display: flex;
+    align-items: center;
   }
 }
-.up-form{
-  margin-top: -140px;
-}
+
+
 @media (min-width: 768px) {
   .modal-dialog {
       width: 370px !important;
@@ -956,7 +973,7 @@ iframe#youtubevideo {
   font-size: 12px;
 }
  #ub-process .feature_box {
- padding: 0 20px 15px 20px;
+ padding: 0 20px 15px 60px;
 }
 #ub-process #property-d-1 .owl-next, #ub-process #property-d-1 .owl-prev{
   top: 35%;
