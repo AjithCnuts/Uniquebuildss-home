@@ -7731,6 +7731,27 @@ a.close-overlay.hidden {
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
 }
+@media (min-width:992px){
+    .form-wrap {
+        padding: 20px;
+        backdrop-filter: blur(10px) saturate(200%);
+        -webkit-backdrop-filter: blur(10px) saturate(200%);
+        background-color: rgb(255 255 255 / 71%);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+    }
+    .form-appointment h3{
+        color: #000000;
+    }
+    .form-wrap ::placeholder {
+        color: #000000b0;
+        opacity: 1; /* Firefox */
+      }
+      
+      .form-wrap ::-ms-input-placeholder { /* Edge 12-18 */
+        color: #000000b0;
+      }
+}
 .slider-form input,
 .slider-form textarea {
     background-color: #ffffff;
