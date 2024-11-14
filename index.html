@@ -5241,7 +5241,7 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="home">
                 <div class="row top20">
-                  <form class="callus padding-bottom" id="contact-form" action="send_email.php" method="POST">
+                  <form class="callus padding-bottom" id="contact-form-2" action="send_email.php" method="POST">
                     <div class="col-md-12">
                         <div class="single-query">
                             <input class="keyword-input" placeholder="Name" name="name" id="name" type="text" required />
@@ -5270,6 +5270,7 @@
                         <button type="submit" class="button-normal yellow">Submit Now</button>
                     </div>
                 </form>
+                
                 
                 </div>
               </div>
@@ -5528,7 +5529,7 @@
         },
       });
     </script>
-    <script>
+    <!-- <script>
       document.getElementById('contact-form').addEventListener('submit', async function(event) {
         event.preventDefault();
     
@@ -5550,8 +5551,47 @@
           alert('There was an error sending the email.');
         }
       });
+    </script> -->
+    <script>
+      // For first form
+$('#contact-form').submit(function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var formData = $(this).serialize(); // Serialize form data
+
+    $.ajax({
+        type: 'POST',
+        url: 'send_email.php',
+        data: formData,
+        success: function(response) {
+            alert('Message sent successfully!');
+        },
+        error: function(error) {
+            alert('There was an error sending the message.');
+        }
+    });
+});
+
+// For second form
+$('#contact-form-2').submit(function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var formData = $(this).serialize(); // Serialize form data
+
+    $.ajax({
+        type: 'POST',
+        url: 'send_email.php',
+        data: formData,
+        success: function(response) {
+            alert('Message sent successfully!');
+        },
+        error: function(error) {
+            alert('There was an error sending the message.');
+        }
+    });
+});
+
     </script>
-    
 </body>
 
 </html>
