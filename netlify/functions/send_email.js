@@ -7,7 +7,7 @@ exports.handler = async (event, context) => {
     service: 'gmail',
     auth: {
       user: 'cnuts.internal01@gmail.com',
-      pass: 'your-gmail-app-password', // Use an App Password
+      pass: 'nehi boeq fcbg gdfz', // Use an App Password
     },
   });
 
