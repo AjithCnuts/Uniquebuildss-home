@@ -1,47 +1,92 @@
 <?php
-// Include the Composer autoload file
-require 'vendor/autoload.php';
+require 'vendor/autoload.php';  // Include the Composer autoloader
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Collect form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $mobile = $_POST['mobile'];
-    $message = $_POST['message'];
 
-    // Create a new PHPMailer instance
-    $mail = new PHPMailer(true);
+    // Form 1: Standard submission form (send_email.php)
+    if (isset($_POST['name']) && isset($_POST['email'])) {
+        // Capture form data
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $mobile = $_POST['mobile'];
+        $location = $_POST['location'];
 
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
-        $mail->SMTPAuth = true;
-        $mail->Username = 'cnuts.internal01@gmail.com'; // SMTP username
-        $mail->Password = 'nehi boeq fcbg gdfz';  // Use app password if 2FA is enabled
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        // Create the email body content
+        $message = "Name: $name<br>Email: $email<br>Mobile: $mobile<br>Location: $location";
 
-        // Enable debugging
-        $mail->SMTPDebug = 2;  // Debugging enabled for better error reporting
+        // PHPMailer setup for form 1
+        $mail = new PHPMailer(true);
 
-        // Recipients
-        $mail->setFrom($email, $name); // Sender's email and name
-        $mail->addAddress('cnuts.internal01@gmail.com', 'Ajith');  // Recipient's email
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';  // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'cnuts.internal01@gmail.com';  // Your Gmail address
+            $mail->Password   = 'nehi boeq fcbg gdfz';    // Your Gmail app password (create one if needed)
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = 587;
 
-        // Content
-        $mail->isHTML(true);
-        $mail->Subject = 'New Message from Contact Form';
-        $mail->Body    = "Name: $name<br>Email: $email<br>Mobile: $mobile<br>Message: $message";
+            // Recipients
+            $mail->setFrom($email, $name); // Sender's email and name
+            $mail->addAddress('cnuts.internal01@gmail.com', 'Ajith');  // Recipient's email
 
-        // Send the email
-        $mail->send();
-        echo 'Message has been sent successfully!';
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = 'Talk to our Expert';
+            $mail->Body    = $message; // Include the form data in the email body
+
+            // Send the email
+            $mail->send();
+            echo 'Message has been sent (Form 1)';
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+    }
+
+    // Form 2: Contact form (ID: contact-form)
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+        // Capture form 2 data
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $mobile = $_POST['mobile'];
+        $messageContent = $_POST['message'];
+
+        // Create the email body content for form 2
+        $message = "Name: $name<br>Email: $email<br>Mobile: $mobile<br>Message: $messageContent";
+
+        // PHPMailer setup for form 2
+        $mail = new PHPMailer(true);
+
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';  // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'cnuts.internal01@gmail.com';  // Your Gmail address
+            $mail->Password   = 'nehi boeq fcbg gdfz';    // Your Gmail app password (create one if needed)
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = 587;
+
+            // Recipients
+            $mail->setFrom($email, $name); // Sender's email and name
+            $mail->addAddress('cnuts.internal01@gmail.com', 'Ajith');  // Recipient's email
+
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = 'Contact Form Submission';
+            $mail->Body    = $message; // Include the form data in the email body
+
+            // Send the email
+            $mail->send();
+            echo 'Message has been sent (Form 2)';
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
     }
 }
 ?>

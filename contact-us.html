@@ -153,44 +153,45 @@
                   <div class="line_3"></div>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" action="contact_form.php" method="POST">
                   <div class="row">
                       <div class="col-md-4 col-sm-4 col-xs-12">
                           <div class="form-group single-query">
-                              <input type="text" name="name" class="keyword-input" placeholder="Your Name">
+                              <input type="text" name="name" class="keyword-input" placeholder="Your Name" required>
                           </div>
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-12">
                           <div class="form-group single-query">
-                              <input type="email" name="email" class="keyword-input" placeholder="Your E-mail">
+                              <input type="email" name="email" class="keyword-input" placeholder="Your E-mail" required>
                           </div>
                       </div>
                       <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="form-group single-query">
-                          <input type="tel" name="mobile" class="keyword-input" placeholder="Mobile Number" pattern="[0-9]{10}" required>
-                        </div>
-                      </div>                            
-                  </div>
-                  <div class="row">
-                      <div class="col-md-12">
                           <div class="form-group single-query">
-                              <textarea name="message" placeholder="Message" id="message"></textarea>
+                              <input type="tel" name="mobile" class="keyword-input" placeholder="Mobile Number" pattern="[0-9]{10}" required>
                           </div>
                       </div>
                   </div>
                   <div class="row">
                       <div class="col-md-12">
+                          <div class="form-group single-query">
+                              <textarea name="message" placeholder="Message" id="message" required></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <!-- <div class="col-md-12">
                           <div class="form-group single-query">
                               <img src="images/contact.jpg" class="img-responsive" alt="image">
                           </div>
-                      </div>
+                      </div> -->
                       <div class="col-md-12 top20">
-                          <div class="form-group single-query"">
+                          <div class="form-group single-query">
                               <button type="submit" class="btn_fill" id="btn_submit" name="btn_submit">Submit</button>
                           </div>
                       </div>
                   </div>
-                </form>
+              </form>
+              
             </div>
 
             <div class="row">

@@ -479,53 +479,35 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="home">
                 <div class="row top20">
-                  <form class="callus padding-bottom" id="contact-form">
+                  <form class="callus padding-bottom" action="send_email.php" method="POST">
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <input
-                          class="keyword-input"
-                          placeholder="Name"
-                          name="name"
-                          id="name"
-                          type="text"
-                        />
-                      </div>
+                        <div class="single-query">
+                            <input class="keyword-input" placeholder="Name" name="name" id="name" type="text" required />
+                        </div>
                     </div>
-
+                
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <input
-                          class="keyword-input"
-                          placeholder="E - mail"
-                          name="email"
-                          id="email"
-                          type="email"
-                        />
-                      </div>
+                        <div class="single-query">
+                            <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email" required />
+                        </div>
                     </div>
-
+                
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <input
-                          class="keyword-input"
-                          placeholder="Mobile Number"
-                          name="mobile"
-                          id="mobile"
-                          type="tel" pattern="[0-9]{10}" maxlength="10"
-                        />
-                      </div>
+                        <div class="single-query">
+                            <input class="keyword-input" placeholder="Mobile Number" name="mobile" id="mobile" type="tel" pattern="[0-9]{10}" maxlength="10" required />
+                        </div>
                     </div>
-
+                
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <textarea
-                          name="message"
-                          placeholder="Message"
-                          id="message"
-                        ></textarea>
-                      </div>
+                        <div class="single-query">
+                            <textarea name="message" placeholder="Message" id="message" required></textarea>
+                        </div>
                     </div>
-                  </form>
+                
+                    <div class="modal-footer">
+                      <button type="submit" class="btn_fill">Send Message</button>
+                    </div>
+                </form>
                 </div>
               </div>
             </div>
