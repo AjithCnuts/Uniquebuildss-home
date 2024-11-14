@@ -26,14 +26,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';  // Set the SMTP server to send through
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'cnuts.internal01@gmail.com';  // Your Gmail address
-            $mail->Password   = 'nehi boeq fcbg gdfz';    // Your Gmail app password (create one if needed)
+            $mail->Username   = 'marketing@uniquebuildss.com';  // Your Gmail address
+            $mail->Password   = 'Marketing@UB2024Ak';    // Your Gmail app password (create one if needed)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
             // Recipients
             $mail->setFrom($email, $name); // Sender's email and name
-            $mail->addAddress('cnuts.internal01@gmail.com', 'Ajith');  // Recipient's email
+            $mail->addAddress('marketing@uniquebuildss.com', 'Ajith');  // Recipient's email
 
             // Content
             $mail->isHTML(true);
@@ -67,14 +67,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';  // Set the SMTP server to send through
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'cnuts.internal01@gmail.com';  // Your Gmail address
-            $mail->Password   = 'nehi boeq fcbg gdfz';    // Your Gmail app password (create one if needed)
+            $mail->Username   = 'marketing@uniquebuildss.com';  // Your Gmail address
+            $mail->Password   = 'Marketing@UB2024Ak';    // Your Gmail app password (create one if needed)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
             // Recipients
             $mail->setFrom($email, $name); // Sender's email and name
-            $mail->addAddress('cnuts.internal01@gmail.com', 'Ajith');  // Recipient's email
+            $mail->addAddress('marketing@uniquebuildss.com', 'Ajith');  // Recipient's email
 
             // Content
             $mail->isHTML(true);
