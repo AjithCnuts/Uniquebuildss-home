@@ -5378,6 +5378,7 @@
     <script src="js/themepunch/revolution.extension.parallax.min.js"></script>
     <script src="js/themepunch/revolution.extension.slideanims.min.js"></script>
     <script src="js/themepunch/revolution.extension.video.min.js"></script>
+    <script src="js/contactform.js"></script>
     <!--Custom Js -->
     <script src="js/functions.js"></script>
     <!--Maps & Markers-->
@@ -5525,29 +5526,7 @@
         },
       });
     </script>
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', async function(event) {
-        event.preventDefault();
-    
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-    
-        try {
-          const response = await fetch('/.netlify/functions/send_email', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-          });
-    
-          const result = await response.json();
-          alert(result.message);
-        } catch (error) {
-          alert('There was an error sending the email.');
-        }
-      });
-    </script>
+
     
 </body>
 
