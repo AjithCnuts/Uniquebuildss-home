@@ -156,14 +156,13 @@
                 <h3 class="text-light mb-3">
                   Talk to our Expert
                 </h3>
-                <form>
+                <form action="send_email.php" method="POST" id="contact-form" >
                   <input name="name" placeholder="Name" type="text" required>
                   <input name="email" placeholder="Email" type="text">
-                  <input name="mobile" placeholder="Mobile number" type="tel" pattern="[0-9]{10}" maxlength="10"
-                    required>
+                  <input name="mobile" placeholder="Mobile number" type="tel" pattern="[0-9]{10}" maxlength="10" required>
                   <input name="location" placeholder="Location" type="text" required>
-                  <button class="button-normal yellow">Submit Now</button>
-                </form>
+                  <button class="button-normal yellow" type="submit">Submit Now</button>
+              </form>
               </div>
             </div>
           </div>
@@ -5242,32 +5241,36 @@
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="home">
                 <div class="row top20">
-                  <form class="callus padding-bottom" id="contact-form">
+                  <form class="callus padding-bottom" id="contact-form" action="send_email.php" method="POST">
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <input class="keyword-input" placeholder="Name" name="name" id="name" type="text" />
-                      </div>
+                        <div class="single-query">
+                            <input class="keyword-input" placeholder="Name" name="name" id="name" type="text" required />
+                        </div>
                     </div>
-
+                
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email" />
-                      </div>
+                        <div class="single-query">
+                            <input class="keyword-input" placeholder="E - mail" name="email" id="email" type="email" required />
+                        </div>
                     </div>
-
+                
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <input class="keyword-input" placeholder="Mobile Number" name="mobile" id="mobile" type="tel"
-                          pattern="[0-9]{10}" maxlength="10" />
-                      </div>
+                        <div class="single-query">
+                            <input class="keyword-input" placeholder="Mobile Number" name="mobile" id="mobile" type="tel" pattern="[0-9]{10}" maxlength="10" required />
+                        </div>
                     </div>
-
+                
                     <div class="col-md-12">
-                      <div class="single-query">
-                        <textarea name="message" placeholder="Message" id="message"></textarea>
-                      </div>
+                        <div class="single-query">
+                            <textarea name="message" placeholder="Message" id="message" required></textarea>
+                        </div>
                     </div>
-                  </form>
+                
+                    <div class="col-md-12">
+                        <button type="submit" class="button-normal yellow">Submit Now</button>
+                    </div>
+                </form>
+                
                 </div>
               </div>
             </div>

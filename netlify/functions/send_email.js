@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
   const mailOptions = {
     from: 'cnuts.internal01@gmail.com',
     to: 'cnuts.internal01@gmail.com',
-    subject: 'New Form Submission',
+    subject: 'Talk to our Expert',
     html: `
       <p>Name: ${name}</p>
       <p>Email: ${email}</p>
