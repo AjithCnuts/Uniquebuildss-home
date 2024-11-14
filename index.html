@@ -133,12 +133,12 @@
                 <h3 class="text-light mb-3">
                   Talk to our Expert
                 </h3>
-                <form action="send_email.php" method="POST">
+                <form action="send_email.php" method="POST" id="contact-form" >
                   <input name="name" placeholder="Name" type="text" required>
                   <input name="email" placeholder="Email" type="text">
                   <input name="mobile" placeholder="Mobile number" type="tel" pattern="[0-9]{10}" maxlength="10" required>
                   <input name="location" placeholder="Location" type="text" required>
-                  <button class="button-normal yellow" type="submit">Submit Now.</button>
+                  <button class="button-normal yellow" type="submit">Submit Now</button>
               </form>                     
               </div>
             </div>
@@ -5523,6 +5523,29 @@
         thumbs: {
           swiper: swiper,
         },
+      });
+    </script>
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+    
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+    
+        try {
+          const response = await fetch('/.netlify/functions/send_email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          });
+    
+          const result = await response.json();
+          alert(result.message);
+        } catch (error) {
+          alert('There was an error sending the email.');
+        }
       });
     </script>
     
